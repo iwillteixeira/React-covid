@@ -57,11 +57,9 @@ Feel free to check the [issues page](https://github.com/iwillteixeira/React-covi
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## Acknowledges
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Acknowledgments to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) who build an incredible design available on [behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). License CC.
 
 ## 📝 License
 
