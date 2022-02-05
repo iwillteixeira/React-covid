@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { act } from 'react-dom/test-utils';
-import { Provider  } from 'react-redux';
+import { Provider } from 'react-redux';
 import {
   render, fireEvent, screen,
 } from '@testing-library/react';
@@ -17,7 +17,6 @@ import Home from '../components/Home';
 import Continent from '../components/Continent';
 
 jest.mock('./mockApi.js');
-
 
 describe('Home page tests', () => {
   test('HomePage matches snapshot', async () => {

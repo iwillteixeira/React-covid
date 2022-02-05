@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { act } from 'react-dom/test-utils';
-import { Provider, } from 'react-redux';
+import { Provider } from 'react-redux';
 import {
   render, fireEvent, screen,
 } from '@testing-library/react';
@@ -10,10 +10,9 @@ import store from '../redux/configureStore';
 import '@testing-library/jest-dom';
 import { getData } from '../redux/covidApi/covidSlice';
 import Header from '../components/Header';
-import Home from '../components/Home.js';
+import Home from '../components/Home';
 
 jest.mock('./mockApi.js');
-
 
 describe('Home page tests', () => {
   test('HomePage matches snapshot', async () => {
