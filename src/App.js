@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Routes,
+  Route,
+} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getData } from './redux/covidApi/covidSlice';
+import Header from './components/Header';
+import Home from './components/Home';
+import Continent from './components/Continent';
+import Country from './components/Country';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="mt-16 px-12 pt-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/continent/:continent" element={<Continent />} />
+          <Route path="/continent/:continent/country/:country" element={<Country />} />
+        </Routes>
+      </div>
+    </>
+
   );
-}
+};
 
 export default App;
