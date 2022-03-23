@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5bcbfd87.css",
+    "main.js": "./static/js/main.9cf69096.js",
+    "static/media/mapmundi.svg": "./static/media/mapmundi.93a996b98fe39cfe2b7374fc7593fa48.svg",
+    "index.html": "./index.html",
+    "main.5bcbfd87.css.map": "./static/css/main.5bcbfd87.css.map",
+    "main.9cf69096.js.map": "./static/js/main.9cf69096.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bcbfd87.css",
+    "static/js/main.9cf69096.js"
+  ]
+}
